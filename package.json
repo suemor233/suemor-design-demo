@@ -1,0 +1,51 @@
+{
+  "name": "@suemor/demo-design",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/suemor.cjs",
+  "module": "./dist/suemor.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/suemor.cjs",
+      "import": "./dist/suemor.js"
+    },
+    "./style": "./dist/style.css"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "8.5.0",
+    "@suemor/eslint-config-react-ts": "^1.0.1",
+    "@suemor/prettier": "^1.0.1",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "^18.11.10",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "clsx": "^1.2.1",
+    "less": "^4.1.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3",
+    "vitest": "^0.25.3"
+  },
+  "dependencies": {
+    "jsdom": "^20.0.3"
+  }
+}
